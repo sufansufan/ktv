@@ -1,0 +1,231 @@
+@import 'base.css';
+html , body{
+    width:100%;
+    height:100%;
+}
+body{
+    overflow: hidden;
+    background: url("../img/gbj.png") no-repeat center/cover;
+    padding: 0.24rem;
+}
+header{
+    width: 100%;
+    height: 0.88rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a{
+    width:0.4rem;
+    height:0.4rem;
+}
+header a:first-of-type{
+    background: url("../img/at_04.png") center/cover;
+}
+p{
+    font-size: 0.36rem;
+    color: #ffffff;
+    text-align: center;
+}
+p>span{
+    color: #ffffff;
+}
+
+.wrapper{
+    width:100%;
+    height:9.2rem;
+    padding: 0.8rem 0.24rem 0;
+    overflow: hidden;
+    z-index: 1;
+    background: #ffffff;
+}
+.scroll{
+    width: 100%;
+    height:auto;
+}
+.scroll > li{
+    width:100%;
+    height:2rem;
+    display: flex;
+    margin-bottom: 0.8rem;
+}
+.thumb{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thumb > img{
+    width:2.43rem;
+    height:1.6rem;
+}
+.data{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.24rem;
+    color: #333333;
+}
+.title{
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+    background: url('../img/borderBottom.png')no-repeat bottom center;
+    /*align-content: space-around;*/
+}
+.title > .sname{
+    font-size: .32rem;
+    color: #fc3195;
+}
+.title > .des{
+   display: flex;
+   justify-content: space-between;
+
+}
+.des > .description{
+    font-size: 0.26rem;
+    color: #454d58;
+}
+.title > .rl{
+    font-size: 0.3rem;
+    color: #a2a2a2;
+}
+
+.price{
+   flex: 1;
+   display: flex;
+    position: relative;
+}
+.price > span{
+    color: #ff318e;
+    font-size: 0.28rem;
+}
+.price > .pricenum{
+    font-weight: 800;
+    font-size: 0.4rem;
+}
+ .itemTotal{
+  position: absolute;
+    right:0;
+}
+
+
+.option{
+    flex: 1;
+    display: flex;
+    align-items: center;
+   position: relative;
+}
+.option > .reduce{
+    width: 0.36rem;
+    height: 0.36rem;
+    background: url("../img/subtract.png") no-repeat center/cover;
+}
+.option > .count{
+    height: 0.36rem;
+    padding: 0 0.3rem;
+    border:1px solid #d2d2d2;
+    border-radius: 0.33rem;
+    margin: 0 0.15rem;
+}
+.option > .plus{
+    width: 0.36rem;
+    height: 0.36rem;
+    background: url("../img/plus.png") no-repeat center/cover;
+}
+.option > .itemTotal{
+    position: absolute;
+    right:0;
+    color: #ff318e;
+    font-size: 0.47rem;
+}
+
+footer{
+    width:100%;
+    height: 2.41rem;
+    background: #ffffff;
+    /*box-shadow: 0 -0.5rem 0.7rem 1rem rgba(248,49,158,0.2) ;*/
+    border-top: 1px solid rgba(248,49,158,0.2) ;
+    position: fixed;
+    left:0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.24rem;
+    box-sizing: border-box;
+}
+footer > .choose{
+    flex: 1;
+    display: flex;
+    font-size: 0.24rem;
+    align-items: center;
+}
+.choose > .chooseList{
+    display: flex;
+    width:80%;
+
+}
+.choose > .chooseList > div{
+    padding: 0.05rem;
+    border:1px solid #e12c7e;
+    background: #ff318e;
+    border-radius: 0.07rem;
+    margin:0 0.18rem;
+    height: 0.46rem;
+}
+.more{
+   display: flex;
+   justify-content: space-between;
+   visibility: hidden;
+}
+.more.active{
+    visibility: visible;
+}
+.more > div{
+    width: .09rem;
+    height: .09rem;
+    border-radius: 50%;
+    margin: 0 .04rem;
+}
+.more > div:first-of-type{
+    background: #ff318e;
+}
+.more > div:nth-of-type(2){
+    background: #ff83bb;
+}
+.more > div:nth-of-type(3){
+    background: #ffd6e8;
+}
+
+footer .bottom{
+   flex: 1;
+   display: flex;
+   justify-content: space-between;
+}
+.bottom > .total{
+    flex: 1;
+    display: flex;
+    align-items: baseline;
+}
+.bottom > .total > span{
+    color: #ff318e;
+    font-size: 0.34rem;
+}
+.bottom > .total > .totalNum{
+    font-size: 0.38rem;
+}
+.bottom > .total > span:last-of-type{
+    font-size: 0.18rem;
+    /*vertical-align: text-bottom;*/
+}
+.bottom > a{
+    flex: 1;
+    width:3.62rem;
+    height:0.82rem;
+    background: url("../img/button01.png") center/cover;
+    text-align: center;
+    line-height: 0.82rem;
+    font-size: 0.24rem;
+    color: #ffffff;
+}
+

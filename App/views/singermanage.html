@@ -1,0 +1,87 @@
+<?php  include 'adminheader.html'?>
+
+<style>
+    input{
+        border:none;
+        background: none;
+        outline: none;
+    }
+</style>
+
+<div class="container">
+    <ul class="nav nav-tabs" id="myTab">
+        <li role="presentation" class="">
+            <a href="#add" id="add-tab">添加歌手</a>
+        </li>
+        <li role="presentation" class="active">
+            <a href="#list" id="list-tab">歌手列表</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane" id="add" style="padding-top: 20px">
+            <form class="form-horizontal" id="form">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">所属分类</label>
+                    <div class="col-sm-10">
+                        <select name="cid" id="cid" class="form-control">
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">歌手名</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="sname" value="" class="form-control" id="inputEmail3" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">图片</label>
+                    <div class="col-sm-10">
+                        <label for="file" class="col-sm-2 control-label btn btn-info">点击上传文件</label>
+                        <div class="imgBox" style="width:200px;"></div>
+                        <input  type="file" class="form-control" style="display:none" id="file" placeholder="">
+                        <input type="hidden" name="spic" value="" id="hidden">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">点击量</label>
+                    <div class="col-sm-10">
+                        <input  type="number" name="hits" class="form-control"  id="hits" placeholder="">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-info">提交</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <div role="tabpanel" class="tab-pane active" id="list" style="padding-top: 20px">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>sid</th>
+                    <th>姓名</th>
+                    <th>图片</th>
+                    <th>点击量</th>
+                    <th>所属分类</th>
+                    <th>操作</th>
+
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+<script src="/ktv1707/Public/js/singermanage.js"></script>
+</body>
+</html>

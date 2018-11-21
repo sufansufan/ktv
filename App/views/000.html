@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+
+    //        let str = 'ab12cd345ef678g34l98';
+    /*let arr = [];
+    let res = '';*/
+    /*for(let i=0;i<str.length;i++){
+        if( str[i] >=0 && str[i] <=9){
+            res+=str[i];
+        }else{
+            if(res){
+                arr.push(res);
+                res = '';
+            }
+        }
+    }
+    if(res){
+        arr.push(res);
+        res = '';
+    }*/
+    /*let reg = /\d+/g;
+    let arr  = str.match(reg);
+    console.log(arr);*/
+
+    //        let reg = /zhangsan/;
+    //        let reg1 = new RegExp('a');
+    //        console.log(reg.test(str));
+    //        console.log(reg.exec(str));
+   /* let str = 'b23cd34ef567';
+    //    let reg = /[0,1,2,3,4,5,6,7,8,9]/;
+    //    let reg = /[q,w,e,r,t,y,u,i,o,p,a,s,d]/;
+    let reg = /[0-9][0-9][0-9]/g;
+    //    let reg1 =/[a-z]/
+    //    let res = reg.exec(str);
+    console.log(reg.exec(str));
+    console.log(reg.exec(str));
+    console.log(reg.exec(str));
+    console.log(reg.xec(str));*/
+//    let username = 'zhang'
+//    let user = /[0-9a-zA-Z]{6}/
+//    let tag = /<[a-z][a-z1-6]{0,8}>/
+//   console.log(tag.test('<span>'))
+//    let phone = /[0-9]{11,}/
+      /*let sfz= /[0-9]{17}[0-9X]/;
+
+      let zs = '14042919981213361X';
+      console.log(sfz.test(zs));*/
+      // 邮箱
+     //  一串数字字母  @  一串数字字母  \. 一串数字字母
+
+    var reg1 = /(http|https):\/\/[\w]+([\.\w\-_]+)+/;
+    var tag = /^<(.*)>(.*)<\/\1>|<(.*)\/>$/;
+    console.log(reg1.test('http://www.baidu.com'));
+    console.log(tag.exec('<b>strong</b>'));
+    console.log(tag.exec('<input />'));
+</script>
+<body>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+ /* let str = 'ab12cd34ef56';
+  let reg = /[0-9]/;
+  let reg1 = /\d/;
+  let reg2 = /\D/; // [^0-9];
+  let user = /[a-zA-Z0-9_]/;
+  let user1 =/\w/;*/
+    //  \s \S
+  // {m} {m,} {m,n}  ? {0,1}   + {1,}   * {0,}
+  let username = /^[a-zA-Z]{6,10}$/;
+  let username1 = /\w{6,}/;
+  let pass = /\w{6,12}/;
+  let qq = /[1-9]\d{4,9}/; //10000
+ //    一串字符    @  一串字符 . 一串字符
+  let email = /\w+@\w+\.\w+/;
+ //   console.log(username.test('zhangsan'));
+// console.log(qq.test('1234567890'));
+    /*console.log(email.test('1234567890@qq.com'));
+    console.log(email.test('张三1234567890@qq.com'));
+    let tag = /^[a-zA-Z][a-zA-Z1-6]{0,8}$/;
+    // div span h1
+    console.log(tag.exec('123div321'))*/
+
+    let reg = /刘帅|李星/g;
+    let content = '刘帅是个好孩子李星';
+    console.log(content.replace(reg,'****'));
+    console.log(content.replace(reg,'****'));
+    // (0351)6470110   03516470110          010-12345678
+    let phone = /\(?\d{4}\)?\d{7}/;
+    let phone1 =  /\d{3}-\d{8}/;
+    phone1 = /\(?\d{3,4}[),-]?\d{7,8}/;
+    phone1 = /\d{4}-\d{7}|\d{3}-\d{8}/;
+//    console.log(phone1.test('0100-1234567'))
+    /*console.log(phone1.test('010-12345678'))
+    console.log(phone1.exec('010-12345678'))
+    console.log(phone1.exec('0351-1234567'))*/
+//    xxx.xxx.xxx.xxx
+    let ip = /(\d{0,3}\.){3}\d{0,3}/;
+   /* console.log(ip.test('192.168.0.1'));
+    console.log(ip.exec('192.168.0.1'));
+    console.log(phone1.exec('0351-1234567'));*/
+//    let str = '<b>这是b</b><b>这是b</b><b>这是b</b><b>这是b</b>';
+//    let html = /<(?:[a-zA-Z0-9]+)>(.*)<\/\1>/;
+//    let html = /<([a-zA-Z0-9]+)>(.*)<\/\1>/;
+//    console.log(html.exec(str));
+    let  num = /a.*?b/g;
+    let str = 'abaabaaabaaaabaaaaab';
+   /* console.log(num.exec(str));// 贪婪
+    console.log(num.exec(str));// 贪婪
+    console.log(num.exec(str));// 贪婪
+    console.log(num.exec(str));// 贪婪
+    console.log(num.exec(str));// 贪婪*/
+   /* console.log(str.replace(num,'****'))
+    console.log(str.replace(num,'****'))
+    console.log(str.replace(num,'****'))
+    console.log(str.replace(num,'****'))*/
+   str = 'ab12cd345ef6789';
+   /*console.log(str.match(/\d+/g));
+   console.log(str.split(/[a-zA-Z]+/g));
+   console.log(str.search(/[a-z]/));
+   console.log(str.search(/[a-z]/));
+   console.log(str.search(/[a-z]/));*/
+   reg = /^hello$/gi;
+   // g i m
+ // js JS jS Js
+    str = 'hello\n';
+    console.log(reg.test(str));
+ // 用户名 密码  电话 qq 邮箱  url 日期 身份证   汉字\u4e00-\u9fcb
+</script>
+</body>
+</html>

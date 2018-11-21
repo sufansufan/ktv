@@ -1,0 +1,74 @@
+<?php  include 'adminheader.html'?>
+
+<style>
+    input{
+        border:none;
+        background: none;
+        outline: none;
+    }
+</style>
+
+<script src="/ktv1707/Public/js/gamemanage.js"></script>
+           <div class="container">
+            <ul class="nav nav-tabs" role="tablist" id="myTab">
+
+                <li role="presentation" class="">
+                    <a href="#add" aria-controls="home" role="tab" data-toggle="tab" id="add">添加</a>
+                </li>
+                <li role="presentation" class="">
+                    <a href="#list" aria-controls="profile" role="tab" data-toggle="tab" id="list">
+                    查看</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+
+            <div class="tab-content" style="padding-top: 20px">
+                <div role="tabpanel" class="tab-pane " id="add-tab">
+                    <form action="javascript:;">
+                        <div class="form-group">
+                            <label for="user">游戏名称</label>
+                            <input type="text" class="form-control" id="user" placeholder="游戏名称" name="gname">
+                        </div>
+                        <div class="form-group">
+                            <label for="pass">类别</label>
+                            <input type="text" class="form-control" id="pass" placeholder="类型" name="type">
+                        </div>
+
+                        <button type="submit" class="btn btn-info">Submit</button>
+                    </form>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="list-tab">
+                    <table class="table table-striped">
+                       <thead>
+                         <tr>
+                           <th>id</th>
+                           <th>名称</th>
+                           <th>类别</th>
+                           <th>操作</th>
+                         </tr>
+                       </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>真心话111</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>真心话1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>真心话1</td>
+                            <td>1</td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+</div>
+</body>
+</html>

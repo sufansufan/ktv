@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin:0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body,html{
+    width:100%;
+    height: 100%;
+}
+.game{
+    width: 100%;
+    height: 100%;
+    background: url("../img/ggc.png")no-repeat;
+    background-size: cover;
+    padding: 0 0.24rem 0  0.24rem;
+}
+.game .header{
+    width: 100%;
+    height: 0.88rem;
+    font-size: 0.34rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.88rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.game .header .return{
+    width: 0.41rem;
+    height: 0.41rem;
+    background: url("../img/sd10.png") no-repeat;
+    background-size:cover;
+}
+.game .header .singer{
+    width: 90%;
+    text-align: center;
+}
+.game .header .singer h2{
+    color: #fff;
+    font-size: 0.34rem;
+    font-weight: 600;
+}
+.lyrics{
+    width: 100%;
+    height: 6.84rem;
+    text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.lyrics li{
+    font-size: 0.32rem;
+    padding: 0.12rem 0 0.12rem 0;
+    color:#fff;
+}
+.options{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.options li{
+    height: 1.5rem;
+    font-size: 0.22rem;
+    text-align: center;
+}
+.options li:nth-child(1) .btn{
+    width: 0.88rem;
+    height: 0.88rem;
+    margin-bottom: 0.1rem;
+    background: url("../img/gc3.png")no-repeat;
+    background-size: cover;
+}
+.options li:nth-child(2) .btn{
+    width: 0.88rem;
+    height:0.88rem;
+    margin-bottom: 0.1rem;
+    background: url("../img/gc4.png")no-repeat;
+    background-size: cover;
+}
+.options li:nth-child(3) .btn{
+    width: 1.12rem;
+    height: 1.12rem;
+    margin-bottom: 0.1rem;
+    background: url("../img/gc5.png")no-repeat;
+    background-size: cover;
+}
+.options li:nth-child(4) .btn{
+    width: 0.88rem;
+    height: 0.88rem;
+    margin-bottom: 0.1rem;
+    background: url("../img/gc6.png")no-repeat;
+    background-size: cover;
+}
+.options li:nth-child(5) .btn{
+    width: 0.88rem;
+    height: 0.88rem;
+    margin-bottom: 0.1rem;
+    background: url("../img/gc7.png")no-repeat;
+    background-size: cover;
+}
+footer {
+    text-decoration: none;
+    font-size: 0.22rem;
+    color: #797981;
+}
+
+footer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    display: block;
+}
+
+footer .tiao {
+    width: 5.15rem;
+    height: 0.05rem;
+    border-radius: 0.05rem;
+    background: #E8D9DD;
+    position: relative;
+}
+
+footer .tiao .select {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 0.05rem;
+    background: #FA3C72;
+}
+
+footer .button {
+    width: 0.16rem;
+    height: 0.16rem;
+    border-radius: 50%;
+    background: #FA3C72;
+    border: 0.03rem solid white;
+    box-shadow: 0 0 0.1rem 0.02rem #FFD3E6;
+    position: absolute;
+    right: -0.08rem;
+    top: -0.06rem;
+}
+
+footer .yuyin {
+    padding: 0.4rem 0.35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+footer .yuyin .pic {
+    width: 0.31rem;
+    height: 0.45rem;
+    border-radius: 0;
+}
+
+footer .voice .pic {
+    width: 0.43rem;
+    height: 0.42rem;
+    border-radius: 0;
+}

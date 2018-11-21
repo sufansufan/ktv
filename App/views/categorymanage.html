@@ -1,0 +1,94 @@
+<?php  include 'adminheader.html'?>
+
+<style>
+    input{
+        border:none;
+        background: none;
+        outline: none;
+    }
+</style>
+
+<script src="/ktv1707/Public/js/categorymanage.js"></script>
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-1">
+               <?php  include 'aside.html'?>
+           </div>
+           <div class="col-lg-11">
+
+               <ul class="nav nav-tabs" role="tablist" id="myTab">
+
+                   <li role="presentation" class="">
+                       <a href="#add" aria-controls="home" role="tab" data-toggle="tab" id="add">添加</a>
+                   </li>
+                   <li role="presentation" class="">
+                       <a href="#list" aria-controls="profile" role="tab" data-toggle="tab" id="list">
+                           查看</a>
+                   </li>
+               </ul>
+
+               <!-- Tab panes -->
+
+               <div class="tab-content" style="padding-top: 20px">
+                   <div role="tabpanel" class="tab-pane " id="add-tab">
+                       <form action="javascript:;">
+
+                           <div class="form-group">
+                               <label for="user">分类名称</label>
+                               <input type="text" class="form-control" id="user" placeholder="分类名称" name="cname">
+
+                           </div>
+
+                           <div class="form-group">
+                               <label for="image">图片</label>
+                               <input type="file" class="form-control" id="image" multiple>
+                           </div>
+
+                           <div class="imgBox" style="width: 100%;height: auto;">
+
+                           </div>
+
+
+                           <div class="form-group">
+                               <input type="hidden" class="form-control" id="image1" name="cimg"  >
+                           </div>
+
+                           <button type="submit" class="btn btn-info">Submit</button>
+                       </form>
+                   </div>
+                   <div role="tabpanel" class="tab-pane" id="list-tab">
+                       <table class="table table-striped">
+                           <thead>
+                           <tr>
+                               <th width="100">cid</th>
+                               <th width="100">分类名称</th>
+                               <th>图片</th>
+                               <th>操作</th>
+                           </tr>
+                           </thead>
+                           <tbody>
+                           <tr>
+                               <td>1</td>
+                               <td>真心话111</td>
+                               <td>1</td>
+                           </tr>
+                           <tr>
+                               <td>1</td>
+                               <td>真心话1</td>
+                               <td>1</td>
+                           </tr>
+                           <tr>
+                               <td>1</td>
+                               <td>真心话1</td>
+                               <td>1</td>
+                           </tr>
+                           </tbody>
+
+                       </table>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</body>
+</html>

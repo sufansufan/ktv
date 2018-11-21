@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/ktv1707/Public/css/bootstrap.css">
+    <script src="/ktv1707/Public/js/jquery.js"></script>
+    <script src="/ktv1707/Public/js/login.js"></script>
+</head>
+<style>  
+    .form-help{
+        padding: 3px;
+        color: red;
+    }
+</style>
+<body style="height: 100%;width: 100%;display: flex;justify-content: center;align-items: center">
+<div class="panel panel-info" style="width: 400px;">
+    <div class="panel-heading">
+        ktv后台管理系统
+    </div>
+    <div class="panel-body">
+        <form action="javascript:;">
+            <div class="form-group">
+                <label for="user">用户名</label>
+                <input type="text" class="form-control" id="user" placeholder="用户名" name="user" data-validate="require:必填项;username:请输入3~8字母">
+                <!--<div class="form-help">必填项</div>-->
+            </div>
+            <div class="form-group">
+                <label for="pass">Password</label>
+                <input type="password" class="form-control" id="pass" placeholder="密码" name="pass" data-validate="require:必填项;password:请输入6~10数字字母下划线">
+            </div>
+
+            <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../Public/js/jquery.js"></script>
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+        list-style: none;
+    }
+    .box{
+        width: 600px;
+        height: 200px;
+        overflow: hidden;
+    }
+    ul{
+        width: 1200px;
+        height: 100%;
+    }
+    li{
+        float: left;
+    }
+    img{
+        display: block;
+        width: 200px;
+        height: 200px;
+    }
+</style>
+<script>
+    $(function () {
+        function one() {
+            $('ul').animate({marginLeft:"-200px"},2000,"linear",function () {
+                $(this).css({marginLeft:"0"});
+                $(this).children('li').first().remove().clone(true).appendTo('ul');
+            })
+        }
+
+        var l=setInterval(one,2000);
+    })
+</script>
+<body>
+    <div class="box">
+        <ul>
+            <li><img src="../../Public/img/at_03.png" alt=""></li>
+            <li><img src="../../Public/img/avatar-bg.png" alt=""></li>
+            <li><img src="../../Public/img/add_07.png" alt=""></li>
+            <li><img src="../../Public/img/at_03.png" alt=""></li>
+            <li><img src="../../Public/img/add_07.png" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<?php  include 'adminheader.html'?>
+
+<style>
+    input{
+        border:none;
+        background: none;
+        outline: none;
+    }
+</style>
+
+<script src="/ktv1707/Public/js/shopmanage.js"></script>
+           <div class="container">
+            <ul class="nav nav-tabs" role="tablist" id="myTab">
+
+                <li role="presentation" class="">
+                    <a href="#add" aria-controls="home" role="tab" data-toggle="tab" id="add">添加</a>
+                </li>
+                <li role="presentation" class="">
+                    <a href="#list" aria-controls="profile" role="tab" data-toggle="tab" id="list">
+                    查看</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+
+            <div class="tab-content" style="padding-top: 20px">
+                <div role="tabpanel" class="tab-pane " id="add-tab">
+                    <form action="javascript:;">
+
+                        <div class="form-group">
+                            <label for="user">商品名称</label>
+                            <input type="text" class="form-control" id="user" placeholder="商品" name="sname">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user1">描述</label>
+                            <input type="text" class="form-control" id="user1" placeholder="商品描述" name="sdescription">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hot">热度</label>
+                            <input type="number" class="form-control" id="hot" placeholder="商品" name="shot">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="srl">容量</label>
+                            <input type="text" class="form-control" id="srl" placeholder="容量" name="srl">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="price">商品价格</label>
+                            <input type="text" class="form-control" id="price" placeholder="价格" name="sprice">
+                        </div>
+
+                        <div class="form-group">
+                        <label for="image">图片</label>
+                        <input type="file" class="form-control" id="image" multiple>
+                    </div>
+
+                        <div class="imgBox" style="width: 100%;height: auto;">
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="image1">图片</label>
+                            <input type="hidden" class="form-control" id="image1" name="simg"  >
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                <span class="sr-only">60% Complete</span>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label >商品类别</label>
+                            酒水<input type="radio" name="stype" value="1">
+                            零食<input type="radio" name="stype" value="2">
+                        </div>
+
+                        <button type="submit" class="btn btn-info">Submit</button>
+                    </form>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="list-tab">
+                    <table class="table table-striped">
+                       <thead>
+                         <tr>
+                           <th width="100">id</th>
+                           <th width="100">名称</th>
+                           <th>描述</th>
+                           <th width="100">热度</th>
+                           <th width="100">单价</th>
+                           <th width="100">容量</th>
+                           <th>图片</th>
+                           <th width="100">类型</th>
+                           <th>操作</th>
+                         </tr>
+                       </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>真心话111</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>真心话1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>真心话1</td>
+                            <td>1</td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+</div>
+</body>
+</html>

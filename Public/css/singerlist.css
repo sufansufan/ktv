@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+.game{
+    width: 100%;
+    height:100%;
+    background: url("/ktv1707/Public/img/gbj.png") no-repeat;
+    background-size:cover;
+    padding: 0 0.24rem 0  0.24rem;
+}
+.game>.header{
+    width:100%;
+    height:0.88rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    line-height: 0.88rem;
+    font-size:0.34rem;
+    color: #ffffff;
+}
+.header .return{
+    width:0.41rem;
+    height:0.41rem;
+    background: url("/ktv1707/Public/img/sd10.png") no-repeat;
+    background-size: cover;
+}
+.header>.aready{
+    height:0.88rem;
+    text-align: center;
+}
+.aready>a{
+    color: #ffffff;
+    font-size: 0.24rem;
+    border:1px solid #ffffff;
+    padding:0.1rem 0.15rem;
+    border-radius:0.15rem;
+}
+.nav{
+    width:100%;
+    height:0.52rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.nav li .tu{
+    width: 0.3rem;
+    height:0.3rem;
+    float:left;
+    margin-right:0.1rem;
+    background: url("/ktv1707/Public/img/yylb1.png") no-repeat;
+    background-size: cover;
+}
+.nav li{
+    display: flex;
+    justify-content: center;
+}
+.nav li a{
+    color: #ffffff;
+    font-size: 0.24rem;
+}
+.search{
+    width:100%;
+    height:0.67rem;
+    background: #ffffff;
+    border-radius: 0.15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:0.25rem;
+}
+.search > .find{
+    width:0.28rem;
+    height:0.28rem;
+    background: url("/ktv1707/Public/img/yylb7.png") no-repeat center;
+    background-size: cover;
+    margin-right: 0.1rem;
+}
+.search > input{
+    border:none;
+    outline:none;
+    background: none;
+    color: #1c1c1c;
+}
+.ranger{
+    width:100%;
+    height: 10.65rem;
+
+}
+.ranger .scroll{
+    display: flex;
+    flex-wrap: wrap;
+    /*background: #ffffff;*/
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.ranger li{
+    width: 2.1rem;
+    height: 3.52rem;
+    font-size: 0.22rem;
+    font-weight: 400;
+}
+.ranger li img{
+    width: 100%;
+    height: 2.98rem;
+}
+.ranger li a{
+    display: block;
+}
